@@ -4,6 +4,7 @@ import React from 'react'
 
 import First from './components/basics/First'
 import WithProps from './components/basics/WithProps'
+import Fragment from './components/basics/Fragment'
 
 ReactDOM.render(
     <div>
@@ -16,6 +17,7 @@ ReactDOM.render(
             title="Student Score"
             student="Maria Rosa"
             score={9.3}/>
+        <Fragment/>
     </div>,
     document.getElementById('root')
 )
