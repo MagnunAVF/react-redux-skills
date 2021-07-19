@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 
+import FamilyMember from "./components/basics/FamilyMember";
 import Family from "./components/basics/Family";
 import Card from "./components/layout/Card";
 import Random from "./components/basics/Random";
@@ -8,13 +9,17 @@ import Fragment from "./components/basics/Fragment";
 import WithProps from "./components/basics/WithProps";
 import First from "./components/basics/First";
 
-export default (_) => (
+export default () => (
   <div className="App">
     <h1>React Fundamentals</h1>
 
     <div className="Cards">
       <Card title="#05 - Component with Children" color="#00C8F8">
-        <Family lastName="Silva" />
+        <Family lastName="Silva">
+            <FamilyMember firstName="Pedro"/>
+            <FamilyMember firstName="Ana"/>
+            <FamilyMember firstName="Gustavo"/>
+        </Family>
       </Card>
 
       <Card title="#04 - Random Value" color="#FA6900">
