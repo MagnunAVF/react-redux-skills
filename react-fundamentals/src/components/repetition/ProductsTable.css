@@ -1,0 +1,16 @@
+.ProductsTable table {
+  width: 100%;
+}
+
+.ProductsTable th {
+  background-color: #1a36b6;
+  color: #fff;
+}
+
+.ProductsTable .odd {
+  background-color: #ddd;
+}
+
+.ProductsTable .even {
+    background-color: #fff;
+}
