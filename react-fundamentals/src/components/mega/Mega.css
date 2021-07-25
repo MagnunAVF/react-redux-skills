@@ -1,0 +1,28 @@
+.Mega label {
+  margin-right: 10px;
+}
+
+.Mega input {
+  font-size: 1.4rem;
+  width: 50px;
+}
+
+.Numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Numbers div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 1px #ccc;
+  color: #fff;
+  background-color: #0066b3;
+  margin: 10px;
+}

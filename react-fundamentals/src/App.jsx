@@ -1,8 +1,9 @@
 import "./App.css";
 import React from "react";
 
-import Counter from './components/counter/Counter'
-import Input from './components/form/Input'
+import Mega from "./components/mega/Mega";
+import Counter from "./components/counter/Counter";
+import Input from "./components/form/Input";
 import IndirectParent from "./components/communication/IndirectParent";
 import DirectParent from "./components/communication/DirectParent";
 import UserInfo from "./components/conditional/UserInfo";
@@ -22,6 +23,10 @@ export default () => (
     <h1>React Fundamentals</h1>
 
     <div className="Cards">
+      <Card title="#13 - MegaSena" color="#0066b3">
+        <Mega quantity={6} />
+      </Card>
+
       <Card title="#12 - Counter" color="#40e3f0">
         <Counter initialNumber={10} />
       </Card>
