@@ -1,6 +1,10 @@
 import "./App.css";
 import React from "react";
 
+import DirectParent from "./components/communication/DirectParent";
+import UserInfo from "./components/conditional/UserInfo";
+import EvenOrOdd from "./components/conditional/EvenOrOdd";
+import ProductsTable from "./components/repetition/ProductsTable";
 import StudentsList from "./components/repetition/StudentsList";
 import FamilyMember from "./components/basics/FamilyMember";
 import Family from "./components/basics/Family";
@@ -9,21 +13,22 @@ import Random from "./components/basics/Random";
 import Fragment from "./components/basics/Fragment";
 import WithProps from "./components/basics/WithProps";
 import First from "./components/basics/First";
-import ProductsTable from "./components/repetition/ProductsTable";
-import EvenOrOdd from "./components/conditional/EvenOrOdd";
-import UserInfo from "./components/conditional/UserInfo";
 
 export default () => (
   <div className="App">
     <h1>React Fundamentals</h1>
 
     <div className="Cards">
+      <Card title="#09 - Direct Communication" color="#a2b77b">
+        <DirectParent />
+      </Card>
+
       <Card title="#08 - Conditional Rendering" color="#6758d3">
         <EvenOrOdd number={20} />
         <EvenOrOdd number={3} />
-        <UserInfo user={{ name: 'Fernando'}} />
+        <UserInfo user={{ name: "Fernando" }} />
         <UserInfo user={{}} />
-        <UserInfo user={{ email: 'f@test.com'}} />
+        <UserInfo user={{ email: "f@test.com" }} />
       </Card>
 
       <Card title="#07 - Repetition Challange" color="#FF432E">
