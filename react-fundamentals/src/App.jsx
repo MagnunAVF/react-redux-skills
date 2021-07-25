@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 
+import Input from './components/form/Input'
 import IndirectParent from "./components/communication/IndirectParent";
 import DirectParent from "./components/communication/DirectParent";
 import UserInfo from "./components/conditional/UserInfo";
@@ -20,6 +21,10 @@ export default () => (
     <h1>React Fundamentals</h1>
 
     <div className="Cards">
+      <Card title="#11 - Controlled Component" color="#e35df4">
+        <Input />
+      </Card>
+
       <Card title="#10 - Indirect Communication" color="#692ec2">
         <IndirectParent />
       </Card>
