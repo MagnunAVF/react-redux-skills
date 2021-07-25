@@ -10,18 +10,28 @@ import Fragment from "./components/basics/Fragment";
 import WithProps from "./components/basics/WithProps";
 import First from "./components/basics/First";
 import ProductsTable from "./components/repetition/ProductsTable";
+import EvenOrOdd from "./components/conditional/EvenOrOdd";
+import UserInfo from "./components/conditional/UserInfo";
 
 export default () => (
   <div className="App">
     <h1>React Fundamentals</h1>
 
     <div className="Cards">
+      <Card title="#08 - Conditional Rendering" color="#6758d3">
+        <EvenOrOdd number={20} />
+        <EvenOrOdd number={3} />
+        <UserInfo user={{ name: 'Fernando'}} />
+        <UserInfo user={{}} />
+        <UserInfo user={{ email: 'f@test.com'}} />
+      </Card>
+
       <Card title="#07 - Repetition Challange" color="#FF432E">
-        <ProductsTable></ProductsTable>
+        <ProductsTable />
       </Card>
 
       <Card title="#06 - Repetition" color="#FF4C65">
-        <StudentsList></StudentsList>
+        <StudentsList />
       </Card>
 
       <Card title="#05 - Component with Children" color="#00C8F8">
@@ -45,7 +55,7 @@ export default () => (
       </Card>
 
       <Card title="#01 - First Component" color="#588C73">
-        <First></First>
+        <First />
       </Card>
     </div>
   </div>
