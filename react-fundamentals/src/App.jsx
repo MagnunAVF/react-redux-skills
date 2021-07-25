@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 
+import IndirectParent from "./components/communication/IndirectParent";
 import DirectParent from "./components/communication/DirectParent";
 import UserInfo from "./components/conditional/UserInfo";
 import EvenOrOdd from "./components/conditional/EvenOrOdd";
@@ -19,6 +20,10 @@ export default () => (
     <h1>React Fundamentals</h1>
 
     <div className="Cards">
+      <Card title="#10 - Indirect Communication" color="#692ec2">
+        <IndirectParent />
+      </Card>
+
       <Card title="#09 - Direct Communication" color="#a2b77b">
         <DirectParent />
       </Card>
